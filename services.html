@@ -1,0 +1,490 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Startup Scalr</title>
+    <link rel="icon" type="image/png" href="./src/StartupScalr.jpg">
+    <script src="https://code.jquery.com/jquery-3.3.1.js"
+        integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous">
+        </script>
+    <script>
+        $(function () {
+            $("#footer").load("footer.html");
+        });
+    </script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .products {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 50px;
+        }
+
+        .services_image img {
+            width: 400px;
+        }
+
+        .services_image h2 {
+            font-weight: 700;
+            font-size: 36px;
+            line-height: 50px;
+            text-align: center;
+            background: linear-gradient(180deg, #FFFFFF 0%, rgba(255, 255, 255, 0) 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            text-fill-color: transparent;
+        }
+
+        .services_content {
+            display: flex;
+            justify-content: left;
+            align-items: center;
+            position: absolute !important;
+            right: -193px;
+            padding: 100px;
+            background: linear-gradient(109.44deg, #000000 8.78%, #666666 87.39%);
+            border-radius: 72px;
+        }
+
+        .services_content ul {
+            padding-left: 25%;
+            background: transparent;
+        }
+
+        .services_content ul li {
+            font-size: 24px;
+            background: transparent;
+        }
+
+        .services2_image h3 {
+            font-weight: 700;
+            font-size: 24px;
+            line-height: 46px;
+            background: linear-gradient(180deg, #FFFFFF 0%, rgba(255, 255, 255, 0) 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            text-fill-color: transparent;
+        }
+
+        .services2 {
+            display: flex;
+            align-items: center;
+            min-height: 400px;
+        }
+
+        .services2_content {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            position: absolute !important;
+            right: -103px;
+            padding: 30px;
+            background: linear-gradient(254.43deg, #1B76BC 3.74%, rgba(217, 217, 217, 0) 96.08%);
+            border-radius: 59px;
+        }
+
+        .services2_content img {
+            width: 500px;
+        }
+
+        .services2_image {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .services2_image img {
+            width: 150px;
+        }
+
+
+        .services3 {
+            position: absolute;
+            padding-bottom: 100px;
+        }
+
+        .services3_content {
+            display: flex;
+            justify-content: left;
+            align-items: center;
+            left: -103px;
+            right: 0;
+            padding: 100px;
+            background: linear-gradient(109.44deg, #000000 8.78%, #666666 87.39%);
+            border-radius: 72px;
+        }
+
+        .services3_content ul {
+            padding-left: 25%;
+            background: transparent;
+        }
+
+        .services3_content ul li {
+            font-size: 24px;
+            background: transparent;
+        }
+
+        .services3_image {
+            width: 300px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .services3_image img {
+            width: 250px;
+        }
+
+
+
+        .services4 {
+            background: linear-gradient(93.08deg, #1B76BC -10.1%, #0d0d0d 52.52%);
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            padding: 100px 0px;
+        }
+
+        .services4_row {
+            background: transparent;
+            border-radius: 40px;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .services4_row h4 {
+            background-color: transparent;
+            text-align: center;
+            font-size: 36px;
+            margin-top: 100px;
+        }
+
+        .softservices_list {
+            background-color: transparent;
+            position: relative;
+        }
+
+        .softservices_list ul {
+            background: linear-gradient(93.08deg, #000000 -10.1%, #777777 106.75%);
+            border-radius: 40px;
+            padding: 50px 300px;
+            margin: 150px auto 250px;
+        }
+
+        .softservices_list ul li {
+            background: transparent;
+            font-size: 20px;
+        }
+
+        .services4_row p {
+            text-align: center;
+            font-size: 20px;
+            background: transparent;
+        }
+
+        .services4_row button {
+            margin: 30px auto;
+            width: 200px;
+            font-size: 28px;
+            border: 5px solid #fff;
+            border-radius: 50px;
+            background: linear-gradient(180deg, #1B3040 0%, #000000 100%);
+            color: #fff;
+
+        }
+
+        .plain_section {
+            height: 470px;
+            background: linear-gradient(72.03deg, #D9D9D9 -62.46%, rgba(217, 217, 217, 0) 146.66%);
+            border-radius: 42px;
+
+        }
+
+
+        .services5 {
+            background: linear-gradient(229.69deg, #1B76BC -57.93%, #000000 105.85%);
+        }
+
+        .services5 .col-md-6,
+        .services5 ul,
+        .services5 li {
+            background: transparent;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .services5 img {
+            background-color: transparent;
+        }
+
+        .services5 .col-md-6 ul {
+            align-items: flex-end;
+            flex-direction: column;
+
+        }
+
+        .services5 .col-md-6 li {
+            font-size: 20px;
+        }
+
+
+        .services6 {
+            background: #000000;
+            padding: 50px;
+        }
+
+        .services6 .col-md-6 {
+            background: transparent;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .services6 .col-md-6 h6 {
+            font-size: 28px;
+            text-align: left;
+            background: transparent;
+        }
+
+        .services6 .col-md-6 p {
+            font-size: 18px;
+            background: transparent;
+            padding-top: 50px;
+        }
+
+        .services6 ul {
+            background: transparent;
+            margin-left: -15px;
+        }
+
+        .services6 ul li {
+            font-weight: 700;
+            font-size: 18px;
+            line-height: 30px;
+            background: linear-gradient(189.56deg, #3F4347 7.21%, #1F70AF 44.17%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            text-fill-color: transparent;
+        }
+
+        .services6 ul li::marker {
+            color: #1F70AF
+        }
+
+        .services6 img {
+            background: transparent;
+            width: 300px;
+        }
+
+        .services6_img {
+            align-items: center;
+            justify-content: flex-end;
+        }
+
+        .services6 .ga {
+            background: #D9D9D9;
+            border-radius: 219.628px;
+            width: 50%;
+            margin: 30px 0px;
+        }
+
+        .services6 .ga img {
+            width: 49%;
+            padding: 10px;
+        }
+
+        .red_ss {
+            width: 75px;
+            height: 300px;
+            border: 1px solid none;
+            background: #C90000;
+            float: right;
+            position: absolute;
+            right: 10vh;
+            border-radius: 35px;
+        }
+
+        .yellow_ss {
+            width: 75px;
+            height: 300px;
+            border: 1px solid none;
+            background: #C5C900;
+            position: absolute;
+            border-radius: 35px;
+            left: 13vh;
+            top: 30vh;
+
+        }
+
+        .yellow_ss2 {
+            width: 75px;
+            height: 300px;
+            border: 1px solid none;
+            background: #C5C900;
+            position: absolute;
+            border-radius: 35px;
+            left: 13vh;
+            top: 80vh;
+
+        }
+
+        .vector16 {
+            position: absolute;
+            top: 85vh;
+            right: 0;
+            bottom: 0;
+            height: 300px;
+            width: 50%;
+            background: transparent;
+        }
+
+        .vector16 img {
+            float: right;
+            background: transparent;
+        }
+    </style>
+</head>
+
+<body>
+    <header class="header">
+        <!-- <a href="services.html">Services</a> -->
+        <a href="products.html">Products</a>
+        <a href="our-clients.html">Our Clients</a>
+        <a href="index.html"> <img src="./src/ss.png" alt="logo" height="100px" width="100%"></a>
+        <a href="about-us.html">About Us</a>
+        <a href="contact-us.html">Contact Us</a>
+    </header>
+
+    <div class="container-fluid">
+
+        <div class="page_heading">
+            <h1>OUR SERVICES</h1>
+        </div>
+        <div class="row col-md-12 services">
+            <div class="col-md-4 services_image">
+                <img src="./src/services_1.png" alt="vayu" class="alpha"> <br />
+                <h2>GRAPHIC DESIGN</h2>
+            </div>
+            <div class="col-md-7 services_content">
+                <ul>
+                    <li>Logo Designing</li>
+                    <li>Poster Designing</li>
+                    <li>Banner Designing</li>
+                    <li>UI/UX Designing</li>
+                    <li>Product Designing</li>
+                </ul>
+            </div>
+
+        </div>
+
+        <div class="row col-md-12 services2">
+            <div class="col-md-4 services2_image">
+                <img src="./src/services_2.png" alt="vayu" class="alpha"> <br />
+                <h3>Business <br />Planning</h3>
+            </div>
+            <div class="col-md-7 services2_content">
+                <img src="src/business planning.png">
+            </div>
+
+        </div>
+
+        <div class="row col-md-12 services3">
+            <div class="col-md-8 services3_content">
+                <ul>
+                    <li>Market Research</li>
+                    <li>Business Plan</li>
+                    <li>Sales Plan</li>
+                    <li>Marketing Plan</li>
+                    <li>Business Forecasting</li>
+                </ul>
+            </div> <br> <br>
+            <div class="col-md-4 services3_image">
+                <img src="./src/services_4.png" alt="vayu" class="alpha">
+            </div>
+
+        </div>
+
+        <div class="row col-md-12 services4">
+            <div class="services4_row">
+                <h4>Software Services</h4>
+                <div class="red_ss"></div>
+                <div class="yellow_ss"></div>
+                <div class="yellow_ss2"></div>
+                <div class="softservices_list">
+                    <ul>
+                        <li>Website Development</li>
+                        <li>Application Development</li>
+                        <li>Game Development</li>
+                        <li>Software Development</li>
+                        <li>Software Testing</li>
+                    </ul>
+                </div>
+                <div class="vector16">
+                    <img src="/src/Vector 16.png" alt="Vector">
+                </div>
+                <p>your custom software is just one click away</p>
+                <button>Click me!</button>
+                <div class="plain_section">
+                    <p></p>
+                </div>
+            </div>
+        </div>
+
+        <h5 style="text-align: center;margin: 50px auto; font-size: 36px;">MARKETING <br /> SERVICES</h5>
+
+        <div class="row col-md-12 services5">
+            <div class="col-md-6">
+                <img src="src/services_5.png">
+            </div>
+            <div class="col-md-6">
+                <ul>
+                    <li>SEO (Search Engine Optimization)</li>
+                    <li>Content Writing</li>
+                    <li>Copy Writing</li>
+                    <li>Email Marketing</li>
+                    <li>Branding</li>
+                    <li>Advertisements</li>
+                    <li>Facebook Marketing</li>
+                    <li>Linkedin Marketing</li>
+                    <li>Instagram Marketing</li>
+                    <li>Twitter Marketing</li>
+                    <li>Youtube Marketing</li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="row col-md-12 services6">
+            <div class="col-md-6">
+                <h6>SALES SUPPORT</h6>
+                <p>Best working strategies for lead generation and <br />conversions.</p>
+                <ul>
+                    <li>Lead Generation</li>
+                    <li>Lead Conversion</li>
+                    <li>Strategy Planning</li>
+                    <li>Lead Forecasting</li>
+                </ul>
+                <div class="ga">
+                    <img src="./src/google analytics.png" alt="ga">
+                    <img src="./src/lin.png" alt="lin">
+                </div>
+            </div>
+            <div class="col-md-6 services6_img">
+                <img src="src/services_6.png">
+            </div>
+        </div>
+    </div>
+
+    <div id="footer"></div>
+</body>
+
+</html>

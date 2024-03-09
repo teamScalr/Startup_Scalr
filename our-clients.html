@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Startup Scalr</title>
+    <link rel="icon" type="image/png" href="/src/StartupScalr.jpg">
+    <script src="https://code.jquery.com/jquery-3.3.1.js"
+        integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous">
+        </script>
+    <script>
+        $(function () {
+            $("#footer").load("footer.html");
+        });
+    </script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <style>
+        @media (max-width: 767px) {
+            .header a {
+                display: block;
+                text-align: center;
+                padding: 10px;
+                margin: 5px;
+            }
+
+            .header img {
+                width: 100%;
+                height: auto;
+            }
+
+            .investments_image img {
+                width: 100%;
+                height: auto;
+            }
+
+            .investments_content,
+            .avail-mentor1,
+            .investments_image {
+                margin-bottom: 20px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <header class="header">
+        <a href="services.html">Services</a>
+        <a href="products.html">Products</a>
+        <a href="index.html"> <img src="/src/ss.png" alt="logo" height="100px" width="100%"></a>
+        <!-- <a href="our-investment.html">Our Investments</a> -->
+        <!-- <a href="our-clients.html">Our Clients</a> -->
+        <a href="about-us.html">About Us</a>
+        <a href="contact-us.html">Contact Us</a>
+    </header>
+    <div class="container-fluid">
+        <div class="page_heading">
+            <h1>Our Clients</h1>
+        </div>
+
+        <div class="row">
+            <div class="col-md-5 col-sm-6 investments_image">
+                <img src="/src/AlphaLhub.png" alt="AlphaLHub" class="alpha">
+            </div>
+            <div class="col-md-6 col-sm-12 investments_content">
+                <h3>AlphaLHub</h3> <br>
+                <p>At Alpha Learning Hub we are assisting its team in various fields <br>so they could concentrate on
+                    their
+                    services. We are offering them <br> expertise in software development, Marketing & Sales.</p>
+            </div>
+        </div>
+        <br><br>
+        <div class="row">
+            <div class="col-md-6 col-sm-6">
+                <div class="row">
+                    <div class="col investments_content">
+                        <h3>Astar Studio’s</h3><br>
+                        <p>We are assisting astar studio’s team in various domains with <br> expertise in Story Writing,
+                            Game Design,Animations and vfx,<br> Game Development, Marketing and sales.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 col-sm-12 investments_image">
+                <img src="/src/Studios.png" alt="astarstudios">
+            </div>
+        </div>
+        <div class="avail-mentor">
+            <img src="/src/Avail%20mentor.png" alt="avail-mentor">
+        </div>
+        <div class="avail-mentor1">
+            <h3>Avail Mentor</h3>
+            <p>We are assisting avail mentors team in marketing and sales.</p>
+        </div>
+
+        <div class="row" style="margin-bottom: 100px;">
+            <div class="col-md-5 col-sm-6 investments_image">
+                <img src="/src/Vittbaki.png" alt="AlphaLHub" class="alpha">
+            </div>
+            <div class="col-md-6 col-sm-12 investments_content">
+                <h3>Vittbaki</h3>
+                <p>We have developed the vittbaki system from scratch and <br> developed applications using flutter and
+                    firebase.</p>
+            </div>
+        </div>
+    </div>
+
+    <div id="footer"></div>
+</body>
+
+</html>

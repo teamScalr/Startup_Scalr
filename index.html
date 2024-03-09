@@ -1,0 +1,533 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Startup Scalr</title>
+    <link rel="icon" type="image/png" href="./src/StartupScalr.jpg">
+    <script src="https://code.jquery.com/jquery-3.3.1.js"
+        integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous">
+        </script>
+    <script>
+        $(function () {
+            $("#footer").load("footer.html");
+        });
+    </script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <style>
+        .business_plan h2 {
+            float: left;
+            font-size: 50px;
+        }
+
+        .business_planning_p {
+            float: left;
+            border: none;
+            width: 70em;
+            height: 350px;
+            border-radius: 50px;
+            background: -webkit-linear-gradient(#000000, #1B76BC);
+            margin-left: 50px;
+        }
+
+        .business_plan_p p {
+            font-size: 18px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .business_planning {
+
+            border: none;
+            width: 500px;
+            height: 500px;
+            border-radius: 50px;
+            background: -webkit-linear-gradient(#000000, #1B76BC);
+            position: relative;
+            left: 62em;
+            top: -700px;
+        }
+
+        /* .navbar-link {
+            text-decoration: none;
+            color: #4b4a4a;
+            transition: color 0.3s ease;
+        }
+
+        .navbar-link:hover {
+            color: #007bff;
+
+        } */
+
+        /* .container:hover {
+            transition: background-color 0.3s ease;
+        } */
+
+        .Logo-home {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 129px 0;
+        }
+
+        .Logo-home img {
+            width: 596px;
+            height: 200px;
+            padding: 10px 100px;
+            background: linear-gradient(180deg, #000000 0%, #1B3040 150.24%);
+            border-radius: 103.047px;
+        }
+
+        .bgmain {
+            position: absolute;
+            bottom: -630px;
+            z-index: 0;
+            background: transparent;
+        }
+
+        .bgmain img {
+            background: transparent;
+            width: 100%;
+        }
+
+        .main {
+            height: 440px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            position: relative;
+            z-index: 1;
+            background: transparent;
+        }
+
+        .main h1,
+        .main p {
+            text-align: center;
+            background: transparent;
+        }
+
+        .ourcollab {
+            position: relative;
+            z-index: 1;
+            background: linear-gradient(91.59deg, #1B76BC 4.68%, #1B2329 96.05%);
+            padding: 50px;
+            height: 400px;
+        }
+
+        .ourcollab h2 {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .how_we_work {
+            padding: 50px 0px;
+            position: relative;
+        }
+
+        .how_we_work>h2 {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-weight: 700;
+            font-size: 48px;
+            background: linear-gradient(90.79deg, #1B76BC 5.57%, #FFFFFF 103.68%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            text-fill-color: transparent;
+        }
+
+        .hww_main_1 h5,
+        .hww_main_2 h5,
+        .hww_main_4 h5 {
+            font-weight: 700;
+            font-size: 28px;
+            line-height: 40px;
+            background: transparent;
+        }
+
+        .hww_1 {
+            background: transparent;
+        }
+
+        .hww_1 .col-md-4 {
+            height: 50vh;
+            background: linear-gradient(132.65deg, #000000 4.58%, #1B76BC 89.65%);
+            border-radius: 64px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-top: 14vh;
+            margin-left: 4vh;
+            z-index: 1;
+        }
+
+        .hww_1 img {
+            position: absolute;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            top: 0;
+            z-index: 1;
+            height: 80vh;
+
+        }
+
+        .hww_1 .col-md-7 {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background: transparent;
+        }
+
+        .hww_1 .col-md-7 h2 {
+            font-size: 50px;
+        }
+
+        .hww_2 .col-md-9 {
+            z-index: 0;
+        }
+
+        .hww_2 .col-md-9 p {
+            height: 40vh;
+            background: linear-gradient(132.65deg, #000000 4.58%, #1B76BC 89.65%);
+            box-shadow: inset 0px 4px 25px rgba(0, 0, 0, 0.25);
+            border-radius: 53px;
+            text-align: center;
+            position: relative;
+            z-index: -1;
+            margin-top: -100px;
+        }
+
+        .arrow_left {
+            display: flex;
+            align-items: center;
+            position: absolute;
+            left: 0;
+            right: 0;
+        }
+
+        .arrow_left img {
+            margin-top: -13vh;
+            margin-left: 10vh;
+            height: 100vh;
+            background: transparent;
+        }
+
+        .arrow_left .business_plan h2 {
+            margin-left: -50vh;
+        }
+
+        .hww_3 {
+            margin: auto 20px;
+            background: transparent;
+        }
+
+        .hww_3 .col-md-4 {
+            height: 50vh;
+            background: linear-gradient(132.65deg, #000000 4.58%, #1B76BC 89.65%);
+            border-radius: 64px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-top: 22vh;
+            margin-left: 12vh;
+            z-index: 1;
+        }
+
+        .hww_3 .col-md-7 {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background: transparent;
+        }
+
+        .hww_3 .col-md-7 h2 {
+            font-size: 50px;
+        }
+
+        .hww_4 .col-md-9 {
+            z-index: 0;
+        }
+
+        .hww_4 .col-md-9 p {
+            height: 40vh;
+            background: linear-gradient(132.65deg, #000000 4.58%, #1B76BC 89.65%);
+            box-shadow: inset 0px 4px 25px rgba(0, 0, 0, 0.25);
+            border-radius: 53px;
+            text-align: center;
+            position: relative;
+            z-index: -1;
+            margin-top: -100px;
+        }
+
+        .hww_main_2,
+        .hww_main_4 {
+            margin-top: 30vh;
+        }
+
+        .arrow_right {
+            display: flex;
+            align-items: center;
+            position: absolute;
+            right: 0;
+        }
+
+        .arrow_right img {
+            margin-top: -25vh;
+            margin-right: 10vh;
+            height: 70vh;
+            background: transparent;
+        }
+
+        .arrow_right .business_plan h2 {
+            margin-right: 30vh;
+        }
+
+        .arrow_right .business_plan h3 {
+            margin-right: 80vh;
+            font-size: 50px;
+        }
+
+        .home_bottom {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .home_bottom h3 {
+            font-weight: 700;
+            font-size: 42px;
+            line-height: 56px;
+            text-align: center;
+            padding: 30px 0px;
+        }
+
+        .home_bottom h2 {
+            font-weight: 700;
+            font-size: 40px;
+            line-height: 50px;
+            text-align: center;
+            background: linear-gradient(180deg, #FFFFFF 0%, rgba(255, 255, 255, 0) 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            text-fill-color: transparent;
+            padding: 30px 0px;
+        }
+
+        .home_bottom img {
+            width: 80%;
+            padding: 50px 0px;
+        }
+
+        .home_bottom h4 {
+            font-weight: 700;
+            font-size: 30px;
+            line-height: 34px;
+            background: linear-gradient(180deg, #000000 0%, #1B76BC 100%);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            text-fill-color: transparent;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- HEADER -->
+    <header class="header">
+        <a href="services.html">Services</a>
+        <a href="products.html">Products</a>
+        <a href="our-clients.html">Our Clients</a>
+        <a href="about-us.html">About Us</a>
+        <a href="contact-us.html">Contact Us</a>
+    </header>
+
+    <div class="container-fluid">
+        <!-- LOGO SECTION -->
+        <div class="Logo-home">
+            <img src="./src/startup_scalr_logo.png" alt="Startup Scalr" class="Logo">
+        </div>
+        <!-- main -->
+        <div class="bgmain">
+            <img src="./src/home_vector_main.png">
+        </div>
+        <div class="main">
+            <h1>Welcome to Startup Scalr - Turning Ideas into Successful <br>Startups.</h1><br>
+            <p>Are you ready to turn your innovative idea into a thriving startup? At Startup Scalr, we
+                specialize in
+                transforming <br>visionary concepts into successful businesses. Our unique approach involves a
+                comprehensive
+                analysis of your <br> idea, backed by thorough market research.</p>
+        </div>
+        <!-- colab -->
+        <div class="ourcollab">
+            <h2 style="background: transparent;">OUR COLLABORATIONS</h2>
+            <img src="./src/our collab.png" alt="our_collab" width="100%" style="background: transparent;">
+        </div>
+        <!-- How we Work! -->
+        <div class="how_we_work">
+            <h2>How we Work!</h2>
+            <div class="hww_main_1">
+                <div class="row col-md-12 hww_1">
+                    <img src="./src/Ellipse 1.png" alt="side_ellipse">
+                    <div class="col-md-4">
+                        <h5>Idea Analysis</h5>
+                    </div>
+                    <div class="col-md-7">
+                        <h2>To give you the best <br />output in field!</h2>
+                    </div>
+                </div>
+                <div class="row col-md-12 hww_2">
+
+                    <div class="col-md-3">
+                    </div>
+                    <div class="col-md-9 business_plan_p">
+                        <p>We begin by carefully examining your idea. Our experienced team conducts <br /> in-depth
+                            market research to assess its viability and potential in the industry.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="arrow_left">
+                <img src="./src/arrow.png" alt="arrow">
+                <div class="business_plan">
+                    <h2>
+                        Building a scalable <br> business plan.
+                    </h2>
+                </div>
+            </div>
+
+            <div class="hww_main_2">
+                <div class="row col-md-12 hww_3">
+                    <div class="col-md-7">
+                    </div>
+                    <div class="col-md-4">
+                        <h5>Business <br /> Planning</h5>
+                    </div>
+
+                </div>
+                <div class="row col-md-12 hww_4">
+                    <div class="col-md-9 business_plan_p">
+                        <p>If your idea passes our rigorous analysis, we craft a detailed business plan <br> tailored to
+                            your vision. This includes a roadmap for development, marketing <br />strategies, and
+                            financial projections.</p>
+                    </div>
+                    <div class="col-md-3">
+                    </div>
+                </div>
+            </div>
+
+            <div class="arrow_right">
+                <div class="business_plan">
+                    <h3>
+                        Enchanting the Market <br />with your ideas!
+                    </h3>
+                </div>
+                <img src="./src/arrow2.png" alt="arrow">
+            </div>
+
+            <div class="hww_main_2">
+                <div class="row col-md-12 hww_3">
+                    <div class="col-md-7">
+                    </div>
+                    <div class="col-md-4">
+                        <h5>Marketing and <br />Sales <br> Strategy</h5>
+                    </div>
+
+                </div>
+                <div class="row col-md-12 hww_4">
+                    <div class="col-md-9 business_plan_p">
+                        <p>A great idea needs effective marketing and sales strategies. We develop <br />plans that
+                            ensure your product or service reaches the right audience, driving <br />growth and success.
+                        </p>
+                    </div>
+                    <div class="col-md-3">
+                    </div>
+                </div>
+            </div>
+
+            <div class="arrow_right">
+                <div class="business_plan">
+                    <h2>
+                        Reaching the Right <br />Customer in Right timing is <br />what we specialize at!
+                    </h2>
+                </div>
+                <img src="/src/arrow3.png" alt="arrow">
+            </div>
+
+            <div class="hww_main_4">
+                <div class="row col-md-12 hww_1">
+                    <div class="col-md-4">
+                        <h5>Tech and <br /> Marketing <br /> Support</h5>
+                    </div>
+                    <div class="col-md-7">
+                    </div>
+                </div>
+                <div class="row col-md-12 hww_2">
+
+                    <div class="col-md-3">
+                    </div>
+                    <div class="col-md-9 business_plan_p">
+                        <p>Our commitment doesn’t end with funding. We provide ongoing tech and <br />marketing support,
+                            ensuring that your startup continues to evolve and thrive <br />in the competitive
+                            market.<br /></p>
+                    </div>
+                </div>
+            </div>
+            <div class="arrow_left">
+                <img src="./src/arrow4.png" alt="arrow">
+                <div class="business_plan">
+                    <h2>
+                        Get the best tech to <br />manage your company.
+                    </h2>
+                </div>
+            </div>
+
+            <div class="hww_main_2">
+                <div class="row col-md-12 hww_3">
+                    <div class="col-md-7">
+                    </div>
+                    <div class="col-md-4">
+                        <h5>Funding <br /> Assistance</h5>
+                    </div>
+
+                </div>
+                <div class="row col-md-12 hww_4">
+                    <div class="col-md-9 business_plan_p">
+                        <p>Securing funding is a crucial step in startup success. Startup Scalr provides <br />support
+                            in obtaining the necessary funding to bring your idea to life.</p>
+                    </div>
+                    <div class="col-md-3">
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="home_bottom">
+            <h3>Startups require is the <br> fund is where we assist <br />you!</h3>
+            <h2>TOGETHER WITH US LET US BUILD <br> A SUCCESSFULL COMPANY WHICH <br> SCALES FROM YOUR IDEAS!</h2>
+            <img src="./src/Rectangle 21.png" alt="Rectangle21">
+            <h2>DONT JUST BE GOOD COMPANY BE THE <br> BEST WE ARE HERE TO ASSIST YOU WITH <br> THE OPERATION WHILE YOU
+                <br> CONCENTRATE ON YOUR SERVICE OR <br> PRODUCT!
+            </h2>
+            <img src="src/ss-big.png" alt="logo-big">
+            <h2 style="font-size: 32px;line-height: 42px;">THE BEST STARTUP BOOSTER IN THE WORLD <br> HELPING STARTUPS
+                TO BECOME WHAT THEY ARE <br> TO DESTINED TO
+                BECOME!</h2>
+            <img src="./src/get_in_touch.png" style="height: 400px; width: 400px;">
+            <h4>WE ARE CREATING BRANDS !</h4>
+        </div>
+    </div>
+
+    <div id="footer"></div>
+</body>
+
+</html>
